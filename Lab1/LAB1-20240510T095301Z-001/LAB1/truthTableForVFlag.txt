@@ -1,0 +1,26 @@
+/*
+(ALUFN_i(4 DOWNTO 3) = "01") - Must:
+
+firstNum SecondNum Operation  out	V
+	0		0        0         0    0	 
+	0		0        0         1    1	 
+	0		0        1         0    0
+	0		0        1         1    0
+	0		1        0         0    0
+	0		1        0         1    0
+	0		1        1         0    0
+	0		1        1         1    1
+	1		0        0         0    0
+	1		0        0         1    0	
+	1		0        1         0    1
+	1		0        1         1    0
+	1		1        0         0    1
+	1		1        0         1    0
+	1		1        1         0    0
+	1		1        1         1    0
+
+out  Op' s' f' + out  Op  s  f' + out' Op  s' f + out' Op' s  f = 
+out (Op' s' f' + Op s f') + out'(Op s' f + Op' s f)=
+out (f' (Op' s' + Op s)) + out'(f (Op s' + Op' s))=
+out (f' (Op XNOR s)) + out' (f (Op Xor s)) = 
+*/
