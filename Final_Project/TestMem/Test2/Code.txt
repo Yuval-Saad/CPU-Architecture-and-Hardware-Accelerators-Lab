@@ -1,0 +1,18 @@
+.data
+filename: .asciiz "C:\Users\elado\Desktop\CPU\mips1_cpu.txt"  # Change the path to the file you want to open
+flags:    .word 0x0000                 # Example flags, adjust as needed (e.g., O_RDONLY)
+
+.text
+main:
+
+    lw $a0,0  #load addr 0 (1)
+    addi $a1,$zero,2 #a1 = 2
+    addi $a1,$a0,4  #add 4 to a0(1) and load to a1
+
+    move $a0, $a1 #move a1 to a0 now a0 should be ao(1)+a1 
+    
+    # Load the flags into $a1
+    mul $a2, $a1,$a0
+    
+    li $v0, 10       # Exit syscall
+    syscall

@@ -4,7 +4,7 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 USE work.aux_package.all;
 -------------------------------------
-ENTITY top IS
+
   GENERIC (n : INTEGER := 8;
 		   k : integer := 3;   -- k=log2(n)
 		   m : integer := 4	); -- m=2^(k-1)
