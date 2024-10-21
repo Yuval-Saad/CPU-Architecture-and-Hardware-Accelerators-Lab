@@ -6,7 +6,7 @@ This project focuses on the design, synthesis, and analysis of a Single Cycle MI
 
 *Contributors*:  
 - Yehonatan Arama  
-- Yuval Yacov Said  
+- Yuval Saad  
 
 ## Project Features
 
